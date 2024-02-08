@@ -1,3 +1,5 @@
+package Homework.HW1;
+
 public class HW1 {
     public static boolean isPalindrome(String s) {
         String lowerCaseString = s.toLowerCase();
