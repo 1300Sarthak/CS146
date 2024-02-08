@@ -1,0 +1,6 @@
+I first processed the string by converting it to lowercase and stripping out anything other than letters and numbers. 
+Next, I compared characters from both ends moving towards the center, to verify if the string is symmetrical returning True for a palindrome and False if not.
+
+
+
+
