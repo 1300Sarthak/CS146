@@ -1,0 +1,3 @@
+First, I check if the two words I'm comparing have the same number of letters, if they don't, they can't be a match.
+Next, I use a Hashmap to keep track of each letter's appearances, counting up for the first word and down for the second. 
+This method helps me ensure every letter aligns perfectly, letting me confidently identify if the words are rearranged versions of each other.
