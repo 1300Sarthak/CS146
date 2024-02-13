@@ -17,7 +17,7 @@ MATRIX_MULTIPLY(A, B):
       result[i][j] ← sum  // O(1) - assigning computed sum to result matrix
   return result  // O(1) - returning the result
 
-//overall The pseudocode for matrix multiplication exhibits a O(mnp) time complexity 
-due to triple nested loops that perform dot products for each element in the result matrix.
+//overall The pseudocode for matrix multiplication has an O(mnp) time complexity
+due to the triple nested loops that perform dot products for each element in the result matrix.
 
 N^3 time complexity
