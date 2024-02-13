@@ -18,7 +18,7 @@ void insertionSort(int arr[]) {
 }
 
 
+
+Writeup: 
 For average and worst-case situations, Insertion Sort's time complexity is O(n^2), driven by nested loops that compare and shift items.
 In the best case, where the array is already sorted, the complexity drops to O(n), making it very efficient for smaller or almost sorted arrays
-
-
