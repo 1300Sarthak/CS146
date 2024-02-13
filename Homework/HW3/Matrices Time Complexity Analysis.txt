@@ -19,3 +19,5 @@ MATRIX_MULTIPLY(A, B):
 
 //overall The pseudocode for matrix multiplication exhibits a O(mnp) time complexity 
 due to triple nested loops that perform dot products for each element in the result matrix.
+
+N^3 time complexity
