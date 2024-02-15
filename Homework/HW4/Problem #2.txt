@@ -1,0 +1,20 @@
+From the pusedcode given the main part that matter to us is the this particular portion 
+
+for i from 1 to rows_A do: 
+  for j from 1 to cols_B do: 
+    for k from 1 to cols_A do: 
+      sum ← sum + A[i][k] * B[k][j] 
+
+
+which consitis of triple nested for loop, in which, the outer most loop runs for each row in matrix A, which is rows_A times.
+With the middle loop running for each column in matrix B, which is cols_B times. Finally the inner most loop runs for column 
+in matrix A which is cols_A times.
+
+Now from this we can see that the Best, Average, and Worst timple complexity will all be the same as in Matrix multiplication's 
+time compelxity purely is based off the size of the input it is given. (AKA how big the matrix is)
+
+Best: 0(rows_A * cols_B * cols_A)
+Average:0(rows_A * cols_B * cols_A)
+Worst: 0(rows_A * cols_B * cols_A)
+
+For example if we say that the size of each matrix is some aribitrary number N then it would be O(N^3) for all 3.
