@@ -1,0 +1,18 @@
+Best Case: The best case scenario for insertion sort would be that all the items in the array are already in the correct order (fully sorted)
+allowing the algorithm to perform no swaps at all leaving with a simple time complexity of just 0(N). (Btw the algorithm works through the outer for loop, 
+and performing comparisons of n-1)
+
+Average Case: The average case scenario would be that insertion sort would in a way that around half, give, or take off the array given is already 
+resolved/sorted. Allowing the algorithm to only have to do half of the work. Cutting our number of comparisons needed to be down by half, which can 
+be shown using (1/2)(i) [i representing the element we are currently at] Overall making all of our elements shown through (1/2)(1+2+3....n-1), or 
+simplified to just (N-1)(N/2). Finally adding everything up we end up with a polynomial of ax^2+bx+c, now from this simply looking at the first term
+we can determine that the time complexity would be 0(n^2), due to the fact the first term is ax^2 of the polynomial when everything is added up.
+
+Worst Case: Lastly when looking at the worst case scenario, the array is sorted in the reverse order or nothing is sorted at all (expect the first element 
+which we assume to be sorted due to the way the insertion sort algorithm works assuming the first element is sorted before going trough the rest of the array)
+For this situation, each new element to be inserted has to be compared with each of the elements already sorted, moving them one position up to make space for
+the new element. This means adding up all the lines of code, would once again result in the polynomial of ax^2+bx+c, and as we discussed about in Average Case, 
+taking the first term makes the time complexity for Worst Case, also at 0(n^2).
+
+
+
