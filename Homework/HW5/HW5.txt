@@ -21,6 +21,8 @@ the theorem shows that T(N) is Theta(N to the power of log base 2 of 9). Therefo
 = Theta(N^3.17)
 
 4. T(N) = 100T(N/2) + n^(log2cn + 1)  (c is a constant)
+This one should be done using the recursion tree method, and fully assumign that c is a constant we can solve by looking at 
+each level indivually at the first level we get 100 T(N/2) + n^(log_2(n)) with level 2 we get ___ from this we will expand, and
 
 5. T(N) = 4T(N/2) + n^(2)logn
 Using the Master Theorem we can get that the function given is of the form theta(n^log_b(a)log^k(n)) with a = 4, b = 2, and k = 1, 
