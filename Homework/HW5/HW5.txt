@@ -3,17 +3,30 @@ For each of the following recurrences, verify the answer you get by applying the
 solving the recurrence algebraically OR applying the recursion tree method. 
 
 1. T(N) = 2T(N-1) + 1
-
-
-
-
-
+Using the substitution method we can get the answer for example, T(N-1) = 2T(N-2) + 1, T(N-2) = 2T(N-3) + 1,
+and so on and so forth Until we reach T(1), in which we assume to be some base case T(1)=c, where c is a constant.
+After that, we may change T(N-1) to match the original equation. Getting us with T(N) = 2T(2T(N-2)+1)+1. If we then
+substituted T(N-2), T(N) = 2T(2T(2T(N-3)+1)+1)+1. By carrying out k such operations, this equation will start to 
+resemble T(N) = 2^k T(N-k) + k. To remove the k, let's say k = n, then we will get, T(N) = 2^n T(0) + N, and T(N) 
+is a constant. Finally, we can state the time complexity being theta(2^n).
 
 2. T(N) = 3T(N-1) + n
+Since T(N) = 3T(N-1) + n isn't in the form of T(N) = aT(N/b) + f(N), we cannot solve it using the master theorem and
+have to instead use the recursion tree method. When we expand each term, by doing so we can see that each term generates
+three times the work of the last term plus a linear term on top of that. Time complexity of theta(3^n)
+
 3. T(N) = 9T(N/2) + n^2
+We can use the Master Theorem with a=9, b=2, and f(N)=N^2. Since f(N) is smaller than N to the power of log base 2 of 9, 
+the theorem shows that T(N) is Theta(N to the power of log base 2 of 9). Therefore, the solution to the recurrence is T(N) 
+= Theta(N^3.17)
+
 4. T(N) = 100T(N/2) + n^(log2cn + 1)  (c is a constant)
+
 5. T(N) = 4T(N/2) + n^(2)logn
+
 6. T(N) = 5T(N/2) + n^(2)/logn
+By expanding the tree we can get our answer, we determine that the cost at each level is 5^K ((N/2^i)^2 / log(N/2^i)). 
+We then use the master theorem to test this, and the result is that the time complexity is Theta(N^(log_2(5))).
 
 
 
