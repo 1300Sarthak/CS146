@@ -1,0 +1,6 @@
+I first started by sorting the input array to arrange the elements in order. We do this to help us later on and 
+with identifying duplicate numbers, and making it easier to skip over them. From there with the sorted array, we
+fix one number and search for two other numbers that when added together cancel out the fixed number. Getting a sum
+of zero. Next, we do this search efficiently by moving two pointers towards each other from opposite ends of the array
+moving their positions based on whether the current sum is too low or too high.The final step is going back to skipping of any 
+duplicate numbers so we can get our proper solution!
