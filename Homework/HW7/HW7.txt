@@ -1,0 +1,5 @@
+To figure out the fewest servers needed for jobs happening at different times, I started by sorting the jobs by 
+when they begin and end. This sorting allowed me to check whether a currently finishing job's server could be 
+reassigned to a new job starting at that time. By iterating over the sorted start times and comparing them with 
+the sorted end times. I was effectively able to track the allocation and freeing up of servers. This method relied 
+on the principle that managing resources based on their availability can minimize the total resources required.
