@@ -1,0 +1,6 @@
+We start by counting how many times each character shows up in the string. From this we can understand that 
+characters can be paired up to form the two halves that we'll need for the palindrome. Since they are symmetrical,
+we can just add up the pairs of characters we have to get the length of our new palindrome, making sure we are using 
+all occurrences we need to. Now, on the off chance we have an odd count of characters, we can just place one exactly
+in the middle, allowing us to build the longest possible palindrome by maximizing the use of pairs. And, accounting
+for a central character if need be.
