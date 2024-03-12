@@ -1,0 +1,5 @@
+I start by looking at the root of the binary search tree alongside the values of the two nodes I'm
+investigating. If both nodes are greater than the root, I know to look in the right subtree, and I 
+continue there. In the case that both are smaller, my search takes me to the left subtree. This 
+decision process continues until I find a node that splits the path between the two nodes. This 
+node is the lowest common ancestor, and I return it as the solution to the problem.
