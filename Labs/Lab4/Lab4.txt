@@ -1,0 +1,5 @@
+I used recursion to solve this BST problem, I start out by basically telling each node to swap its left and 
+right children. Starting from the root, I go deeper into the tree working my way down to the smallest branches.
+At each node I perform the same action, by calling the function on my left child, then on my right child asking 
+them to do the same swap. Since this is recursion, this process repeats itself until every node has been visited 
+and its children have been swapped, finally giving me the inverted tree when I work my way back up to the root.
