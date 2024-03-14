@@ -1,0 +1,7 @@
+To check if a binary tree is a BST (binary search tree). I start at the root and traverse through the full tree.
+For each of the nodes, I make sure that the range of values that its allowed to have must be greater than all 
+values to its left and less than all to its right. If a node breaks these rules then I know it's not a valid 
+binary search tree. And I mark it off as false. If this doesn't happen, I will continue to traverse down the 
+binary tree making sure I recursively apply these checks to all of the nodes. Thoroughly make sure that every node 
+fits perfectly in this range. If all nodes pass the test, then the tree is a valid binary search tree, and I make it
+as true.
