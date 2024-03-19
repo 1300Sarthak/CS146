@@ -1,0 +1,5 @@
+The program works the same way, for both Java and Python it works by using a level order traversal on a binary tree. 
+Starting at the root, it adds to a queue. In a loop it takes each node from the front of the queue, records its value,
+and then if the node has children, it adds them to the queue. This continues until the queue is fully empty. The 
+program outputs a list containing the values of the nodes at each level, starting from the root and proceeding level
+by level down the tree. This makes sure that all nodes on one level are visited before any nodes on the next.
