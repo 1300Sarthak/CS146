@@ -1,0 +1,8 @@
+An adjacency matrix is a square grid with nodes represented by the rows and columns and connections indicated by
+the values (0 or 1). I started by having to make a list for every node in order to turn this into an adjacency list.
+Next, for every row in the matrix that represented a node, I checked to see if there is a 1 for that row's column, 
+which would indicate a link to the node that the column is representing. Then, I would add the node in this column to
+the list of nodes. I continued this on until, no more matching adjacent pixels remained.  Meaning that the  flood 
+fill, had been fully completed. I implemented in  Python with a flood_fill_python function and mirrored the logic 
+in Java with a floodFillJava method. Both methods efficiently iterate over the image, altering each pixel's color in
+turn, fulfilling the task of the flood fill algorithm.
