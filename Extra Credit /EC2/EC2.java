@@ -1,5 +1,5 @@
 package Extra Credit .EC2;
 
-public class EC {
+public class EC2 {
     
 }

@@ -1,0 +1,6 @@
+
+The code I wrote determines if all college courses can be completed given their prerequisites. To solve this I 
+first counted the prerequisites for each course, then tackled those without any, progressing to others as their 
+prerequisites were fulfilled. My loop keeps track until all courses are processed or until it hit an error with 
+unresolved prerequisites. If the processed courses matched the total count, then my code returns True. This signals 
+that all courses could be completed. Otherwise, it returns False.
