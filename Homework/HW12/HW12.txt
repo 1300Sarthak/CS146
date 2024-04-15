@@ -1,0 +1,8 @@
+To solve this problem, in HW12 of supplying water to all houses within a village using the lowest cost possible,
+I started out by using a graph-based approach, treating each house as a node. I presented the option to install a 
+well in each house as edges connecting a virtual node to these houses with costs equivalent to the well installation,
+and I included the piping costs as edges between houses. I then implemented Kruskal's algorithm which works well for
+finding the Minimum Spanning Tree, also known as MST of the graph. It works well by first sorting all the edges, 
+including both wells and pipes based on cost and then using a union-find data structure with path compression to 
+add edges without forming cycles. This approach, that I have used combines edges until all houses are connected, 
+making sure that the total cost is low by always selecting the least expensive available connection.
