@@ -1,0 +1,7 @@
+I first started out by setting up a matrix so I can keep track of the shortest distances between each pair of
+cities making sure to initialize the distances to infinity. I did this for all except for the diagonal where 
+cities have a zero distance to themselves. Then, I made sure to updated the distance matrix using the given edges,
+and with the help of the Floyd Warshall algorithm, which iteratively updates the shortest paths by considering each
+city as an transit point between every possible pair of cities. Then, I counted the number of cities each city can 
+reach within the distance threshold and tracked the city with the least connections, making sure to choose the city
+with the highest number in case of a tie. Finally, returning that city as the answer.
