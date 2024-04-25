@@ -1,0 +1,5 @@
+I first started at zero, where I need no coins, I look at each coin value and update my list with the
+new minimum for each amount. If a coin fits into an amount, I see if it gives a smaller number of coins 
+than what I had before. If it does I remember that number, and save it. Finally, if the spot for my total 
+amount has a real number and not the super large one I started with that's the least coins I need otherwise,
+it means I can't make that amount with the coins I have.
